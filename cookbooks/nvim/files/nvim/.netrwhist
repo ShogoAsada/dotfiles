@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/Users/asadashougo/Documents/GitHub/dotfiles'
+let g:netrw_dirhist_8='/Users/asadashougo/Documents/GitHub/dotfiles/cookbooks'
+let g:netrw_dirhist_7='/Users/asadashougo/Documents/GitHub/dotfiles'
+let g:netrw_dirhist_6='/Users/asadashougo/Documents/GitHub/dotfiles/bin'
+let g:netrw_dirhist_5='/Users/asadashougo/Documents/GitHub/dotfiles'
+let g:netrw_dirhist_4='/Users/asadashougo/Documents/GitHub/team-activity-feeder'
+let g:netrw_dirhist_3='/Users/asadashougo/Documents/GitHub'
+let g:netrw_dirhist_2='/Users/asadashougo/Documents'
+let g:netrw_dirhist_1='/Users/asadashougo'
+let g:netrw_dirhist_0='/Users/asadashougo/Documents'
