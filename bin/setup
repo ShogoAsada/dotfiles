@@ -23,4 +23,5 @@ esac
 curl -o "bin/${mitamae_cache}" -fL "https://github.com/itamae-kitchen/mitamae/releases/download/v${mitamae_version}/${mitamae_bin}"
 
 chmod +x "bin/${mitamae_cache}"
+ln -sf "${mitamae_cache}" bin/mitamae
 

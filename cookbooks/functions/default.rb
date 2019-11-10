@@ -1,8 +1,9 @@
-define :dotfile, source: nil do
-  source = params[:source] || params[:name]
-  link File.join(node[:home], params[:name]) do
-    to File.expand_path("../../../config/#{source}", __FILE__)
+define :ln do
+  name = params[:name]
+  link node[:xdg_config_home] do
+    to File.expand_path("../../#{name}/files/#{name}", __FILE__)
     user node[:user]
+    force true
   end
 end
 
