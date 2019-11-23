@@ -21,7 +21,7 @@ git File.expand_path("#{node[:ruby][:plugin_path]}/rbenv-default-gems") do
 end
 
 link File.expand_path("#{node[:ruby][:rbenv_path]}/default-gems") do
-  to File.expand_path('../../rbenv/files/.rbenv/default-gems', __FILE__)
+  to File.expand_path('../files/.rbenv/default-gems', __FILE__)
   user node[:user]
   force true
 end
