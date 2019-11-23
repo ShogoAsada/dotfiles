@@ -1,0 +1,29 @@
+# format
+# :emoji: semantic: commit message
+
+# Semantic Commit Messages
+# https://seesparkbox.com/foundry/semantic_commit_messages
+#
+# chore: add Oyster build script
+# docs: explain hat wobble
+# feat: add beta sequence
+# fix: remove broken confirmation message
+# refactor: share logic between 4d3d3d3 and flarhgunnstow
+# style: convert tabs to spaces
+# test: ensure Tayne retains clothing
+
+# emojis
+# 🐛 :bug: バグ修正
+# 🔧 :wrench: 設定の更新
+# 👍 :+1: 機能改善
+# ✨ :sparkles: 小さな機能追加
+# 🎉 :tada: 盛大に祝うべき大きな機能追加
+# 🚀 :rocket: パフォーマンス改善
+# ♻️  :recycle: リファクタリング
+# 📝 :pencil: ドキュメント修正
+# ➕ :heavy_plus_sign: リソース・ライブラリの追加
+# ➖ :heavy_minus_sign: リソース・ライブラリの削除
+# 🆙 :up: リソース・ライブラリのアップデート
+# ✅ :white_check_mark: テストの追加・削除・修正
+# 👕 :shirt: Lintエラーの修正
+
