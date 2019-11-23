@@ -20,7 +20,7 @@ git File.expand_path("#{node[:ruby][:plugin_path]}/rbenv-default-gems") do
   user node[:user]
 end
 
-link File.expand_path("#{node[:rbenv_path]}/default-gems") do
+link File.expand_path("#{node[:ruby][:rbenv_path]}/default-gems") do
   to File.expand_path('../../rbenv/files/.rbenv/default-gems', __FILE__)
   user node[:user]
   force true
@@ -28,7 +28,7 @@ end
 
 execute "rbenv install #{node[:ruby][:version]}" do
   user node[:user]
-  not_if "test -d ~/.rbenv/versions/#{node[:ruby][:version]}"
+  not_if "test -d #{node[:ruby][:rbenv_path]}/versions/#{node[:ruby][:version]}"
 end
 
 execute "rbenv global #{node[:ruby][:version]}" do
