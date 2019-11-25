@@ -6,8 +6,6 @@ execute '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebr
   not_if 'brew doctor'
 end
 
-tap 'sanemat/font'
-
 brew 'awscli'
 brew 'colordiff'
 brew 'direnv'
@@ -24,7 +22,6 @@ brew 'python'
 brew 'python@2'
 brew 'ranger'
 brew 'rbenv'
-brew 'ricty'
 brew 'tfenv'
 brew 'yarn'
 
