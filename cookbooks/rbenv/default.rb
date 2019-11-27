@@ -2,7 +2,7 @@ node.reverse_merge!(
   ruby: {
     version: '2.6.3',
     rbenv_path: '~/.rbenv',
-    plugin_path: "#{node[:ruby][:rbenv_path]}/plugins"
+    plugin_path: '~/.rbenv/plugins'
   }
 )
 

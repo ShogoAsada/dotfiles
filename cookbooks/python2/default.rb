@@ -1,4 +1,4 @@
-node.revrse_merge!(
+node.reverse_merge!(
   py2: {
     packages: {
       neovim: 'pynvim'
