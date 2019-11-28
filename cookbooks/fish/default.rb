@@ -1,19 +1,15 @@
-node.reverse_merge!(
-  fish: {
-    path: '/usr/local/bin/fish'
-  }
-)
+fish_path = '/usr/local/bin/fish'
 
 directory "#{node[:xdg_config_home]}/fish" do
   user node[:user]
 end
 
-execute "echo #{node[:fish][:path]} | sudo tee -a /etc/shells" do
-  not_if "grep #{node[:fish][:path]} /etc/shells"
+execute "echo #{fish_path} | sudo tee -a /etc/shells" do
+  not_if "grep #{fish_path} /etc/shells"
 end
 
-execute "chsh -s #{node[:fish][:path]}" do
-  not_if { `dscl localhost -read Local/Default/Users/#{node[:user]} UserShell`.include?(node[:fish][:path]) }
+execute "chsh -s #{fish_path}" do
+  not_if { `dscl localhost -read Local/Default/Users/#{node[:user]} UserShell`.include?(fish_path) }
 end
 
 link File.expand_path("#{node[:xdg_config_home]}/fish/config.fish") do

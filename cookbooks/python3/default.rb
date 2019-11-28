@@ -1,12 +1,6 @@
-node.reverse_merge!(
-  py3: {
-    packages: {
-      neovim: 'pynvim'
-    }
-  }
-)
+python = { packages: { neovim: 'pynvim' } }
 
-execute "pip3 install #{node[:py3][:packages][:neovim]}" do
+execute "pip3 install #{python[:packages][:neovim]}" do
   user node[:user]
 end
 
