@@ -1,5 +1,5 @@
 ruby = {
-  version: '2.6.3',
+  version: '2.6.5',
   rbenv_path: '~/.rbenv',
   plugin_path: '~/.rbenv/plugin_path'
 }
@@ -22,6 +22,10 @@ link File.expand_path("#{ruby[:rbenv_path]}/default-gems") do
   to File.expand_path('../files/.rbenv/default-gems', __FILE__)
   user node[:user]
   force true
+end
+
+execute "brew update && brew upgrade ruby-build" do
+  user node[:user]
 end
 
 execute "rbenv install #{ruby[:version]}" do
