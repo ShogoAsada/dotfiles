@@ -23,6 +23,7 @@ brew 'python@2'
 brew 'ranger'
 brew 'rbenv'
 brew 'tfenv'
+brew 'tig'
 brew 'yarn'
 
 cask 'alfred'
