@@ -1,3 +1,4 @@
+set -x EDITOR nvim
 set -x PATH $HOME/.rbenv/shims $PATH
 set -x PATH $HOME/.nodebrew/current/bin $PATH
 set -x XDG_CONFIG_HOME $HOME/.config
