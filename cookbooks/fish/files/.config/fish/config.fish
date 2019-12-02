@@ -5,6 +5,8 @@ set -x XDG_CONFIG_HOME $HOME/.config
 set -x GHQ_ROOT $HOME/ghq/src
 eval (direnv hook fish)
 
+set -x FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+
 alias v 'nvim'
 alias rm 'rm -i'
 alias cp 'cp -i'
