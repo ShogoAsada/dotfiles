@@ -19,6 +19,7 @@ alias glo 'git log --oneline'
 alias glall 'git log --oneline --decorate --graph --branches --tags --remotes'
 alias gp 'git grep'
 alias fig 'docker-compose'
+alias fbr 'git branch -a | fzf | xargs git checkout'
 
 # TODO: remove_duplicate_path関数がなくてもどうにかしたい
 # sourceなどで環境変数が重複してしまうのでその対策
