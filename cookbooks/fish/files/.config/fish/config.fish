@@ -6,6 +6,7 @@ set -x GHQ_ROOT $HOME/ghq/src
 eval (direnv hook fish)
 
 set -x FZF_DEFAULT_OPTS '--height 40% --reverse --border'
+set -U FZF_LEGACY_KEYBINDINGS 0
 
 alias v 'nvim'
 alias rm 'rm -i'
