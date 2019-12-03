@@ -21,33 +21,14 @@ alias gp 'git grep'
 alias fig 'docker-compose'
 alias fbr 'git branch -a | fzf | xargs git checkout'
 
-# TODO: remove_duplicate_path関数がなくてもどうにかしたい
-# sourceなどで環境変数が重複してしまうのでその対策
-# TODO: ~/.config/fish/functionsを掘って、remove_duplicate_path.fishを作る
-function remove_duplicate_path
-  set -x PATH (echo $PATH | tr ' ' '\n' | sort -u)
-end
-
-# rangerのサブシェル多重起動を防ぐ
-function ranger
-  if set -q -x RANGER_LEVEL
-    exit
-  else
-    command ranger $argv
-  end
-end
-
-# rangerのサブシェルから起動された場合はpromptを変更する
-if set -q -x RANGER_LEVEL
-  set -g _origin_prompt (fish_prompt)
-  function fish_prompt
-    echo "(RANGER)$_origin_prompt"
-  end
-end
-
-# colordiff alias
 if test -n 'which colordiff'
   alias diff 'colordiff -u'
 end
 
+if set -q -x RANGER_LEVEL
+  set -g _origin_prompt (fish_prompt)
+  fish_prompt
+end
+
 remove_duplicate_path
+
