@@ -7,6 +7,7 @@ execute '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebr
 end
 
 brew 'awscli'
+brew 'circleci'
 brew 'colordiff'
 brew 'direnv'
 brew 'fish'
