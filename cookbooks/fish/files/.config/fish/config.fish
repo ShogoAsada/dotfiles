@@ -25,10 +25,5 @@ if test -n 'which colordiff'
   alias diff 'colordiff -u'
 end
 
-if set -q -x RANGER_LEVEL
-  set -g _origin_prompt (fish_prompt)
-  fish_prompt
-end
-
 remove_duplicate_path
 
