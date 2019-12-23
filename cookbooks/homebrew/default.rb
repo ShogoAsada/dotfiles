@@ -3,7 +3,7 @@ execute 'brew update' do
 end
 
 execute '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"' do
-  not_if 'brew doctor'
+  not_if 'which brew'
 end
 
 brew 'awscli'
