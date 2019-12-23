@@ -32,6 +32,12 @@ brew 'yarn'
 
 cask 'alfred'
 cask 'docker'
+cask 'evernote'
+cask 'google-chrome'
+cask 'google-japanese-ime'
 cask 'iterm2'
+cask 'kindle'
 cask 'slack'
+cask 'virtualbox'
+cask 'vagrant'
 
