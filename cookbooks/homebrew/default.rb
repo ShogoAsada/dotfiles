@@ -28,6 +28,7 @@ brew 'ranger'
 brew 'rbenv'
 brew 'tfenv'
 brew 'tig'
+brew 'tree'
 brew 'yarn'
 
 cask 'alfred'
