@@ -25,5 +25,8 @@ if test -n 'which colordiff'
   alias diff 'colordiff -u'
 end
 
-remove_duplicate_path
+# sourceなどで環境変数が重複してしまうのでその対策
+function remove_duplicate_path
+  set -x PATH (echo $PATH | tr ' ' '\n' | sort -u)
+end
 
