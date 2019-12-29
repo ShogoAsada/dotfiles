@@ -2,7 +2,15 @@ if &compatible
   set nocompatible
 endif
 
-set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+if &runtimepath !~# '/dein.vim'
+  let s:dein_repo_dir = expand('~/.cache/dein/repos/github.com/Shougo/dein.vim')
+  if !isdirectory(s:dein_repo_dir)
+    execute '!git clone https://github.com/Shougo/dein.vim ' s:dein_repo_dir
+  endif
+
+  execute 'set runtimepath^=' . s:dein_repo_dir
+endif
+
 if dein#load_state('~/.cache/dein')
   call dein#begin('~/.cache/dein')
 
