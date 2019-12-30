@@ -31,3 +31,4 @@ function remove_duplicate_path
   set -x PATH (echo $PATH | tr ' ' '\n' | sort -u)
 end
 
+remove_duplicate_path
