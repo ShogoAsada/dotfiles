@@ -17,7 +17,7 @@ link File.expand_path("#{node[:home]}/.git_commit_msg_tpl") do
 end
 
 link File.expand_path("#{node[:xdg_config_home]}/git") do
-  to File.expand_path('../files/config/git', __FILE__)
+  to File.expand_path('../files/.config/git', __FILE__)
   user node[:user]
   force true
 end
