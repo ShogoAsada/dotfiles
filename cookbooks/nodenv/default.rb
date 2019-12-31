@@ -5,6 +5,7 @@ nodenv = {
 
 execute "nodenv install #{nodenv[:version]}" do
   user node[:user]
+  not_if "test -d #{nodenv[:path]}/versions/#{nodenv[:version]}"
 end
 
 execute "nodenv global #{nodenv[:version]}" do
