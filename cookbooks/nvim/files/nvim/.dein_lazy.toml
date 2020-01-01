@@ -1,1 +1,4 @@
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+on_ft = ['terraform']
 
