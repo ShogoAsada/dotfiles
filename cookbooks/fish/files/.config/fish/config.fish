@@ -19,7 +19,6 @@ alias glall 'git log --oneline --decorate --graph --branches --tags --remotes'
 alias gp 'git grep'
 alias fig 'docker-compose'
 alias fbr 'git branch -a | fzf | xargs git checkout'
-alias repos 'cd (ghq list -p | peco)'
 
 if test -n 'which colordiff'
   alias diff 'colordiff -u'
