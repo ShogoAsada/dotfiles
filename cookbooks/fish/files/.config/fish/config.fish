@@ -1,11 +1,9 @@
 set -x EDITOR nvim
 set -x PATH $HOME/.rbenv/shims $PATH
-set -x PATH $HOME/.nodebrew/current/bin $PATH
 set -x XDG_CONFIG_HOME $HOME/.config
 set -x GHQ_ROOT $HOME/ghq/src
 eval (direnv hook fish)
-status --is-interactive; and source (nodenv init -|psub)
-
+set -x PATH $HOME/.nodenv/shims $PATH
 set -x FZF_DEFAULT_OPTS '--height 40% --reverse --border'
 set -U FZF_LEGACY_KEYBINDINGS 0
 
