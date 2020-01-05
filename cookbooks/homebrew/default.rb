@@ -41,4 +41,5 @@ cask 'kindle'
 cask 'slack'
 cask 'virtualbox'
 cask 'vagrant'
+cask 'dropbox'
 
