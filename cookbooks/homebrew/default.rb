@@ -31,7 +31,6 @@ brew 'tig'
 brew 'tree'
 brew 'yarn'
 
-cask 'alfred'
 cask 'docker'
 cask 'evernote'
 cask 'google-chrome'
