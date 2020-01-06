@@ -3,5 +3,6 @@
 .env
 .envrc
 
+.vscode/
 .vagrant/
 
