@@ -6,6 +6,8 @@ execute '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebr
   not_if 'which brew'
 end
 
+tap 'heroku/brew'
+
 brew 'awscli'
 brew 'circleci'
 brew 'colordiff'
