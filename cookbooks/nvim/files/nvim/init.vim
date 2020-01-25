@@ -29,6 +29,8 @@ endif
 
 filetype plugin indent on
 
+set clipboard=unnamed
+
 set fenc=utf-8
 set nobackup
 set noswapfile
