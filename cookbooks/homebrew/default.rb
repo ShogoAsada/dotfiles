@@ -45,4 +45,5 @@ cask 'vagrant'
 cask 'virtualbox'
 cask 'visual-studio-code'
 cask 'dropbox'
+cask 'zoom'
 
