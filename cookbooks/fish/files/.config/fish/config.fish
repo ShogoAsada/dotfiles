@@ -32,3 +32,6 @@ end
 
 remove_duplicate_path
 
+# /usr/loca/bin を先頭にするために
+# remove_duplicate_path を修正する必要あり
+set -x PATH /usr/local/bin $PATH
