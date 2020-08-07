@@ -9,6 +9,7 @@ end
 tap 'heroku/brew'
 
 brew 'awscli'
+brew 'amazon-ecs-cli'
 brew 'circleci'
 brew 'colordiff'
 brew 'direnv'
