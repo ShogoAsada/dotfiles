@@ -7,6 +7,7 @@ execute '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebr
 end
 
 tap 'heroku/brew'
+tap 'homebrew/cask-drivers'
 
 brew 'awscli'
 brew 'amazon-ecs-cli'
@@ -44,6 +45,7 @@ cask 'google-chrome'
 cask 'google-japanese-ime'
 cask 'iterm2'
 cask 'kindle'
+cask 'qmk-toolbox'
 cask 'quik'
 cask 'slack'
 cask 'trailer'
