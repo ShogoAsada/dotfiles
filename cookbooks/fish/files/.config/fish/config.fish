@@ -31,9 +31,3 @@ function remove_duplicate_path
 end
 
 remove_duplicate_path
-
-# /usr/loca/bin を先頭にするために
-# remove_duplicate_path を修正する必要あり
-set -x PATH /usr/local/bin $PATH
-# nodenvを/usr/local/binよりも優先する
-set -x PATH $HOME/.nodenv/shims $PATH
