@@ -1,5 +1,5 @@
 ruby = {
-  version: '2.6.6',
+  version: '3.0.0',
   rbenv_path: '~/.rbenv',
   plugin_path: '~/.rbenv/plugin_path'
 }
