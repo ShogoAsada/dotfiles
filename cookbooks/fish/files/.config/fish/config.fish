@@ -31,3 +31,7 @@ function remove_duplicate_path
 end
 
 remove_duplicate_path
+
+# $PATH の優先順位制御のため
+set -x PATH /usr/local/bin $PATH
+set -x PATH $HOME/.nodenv/shims $PATH
