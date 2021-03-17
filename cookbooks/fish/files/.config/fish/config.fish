@@ -1,5 +1,4 @@
 set -x EDITOR nvim
-set -x PATH $HOME/.rbenv/shims $PATH
 set -x XDG_CONFIG_HOME $HOME/.config
 set -x GHQ_ROOT $HOME/ghq/src
 eval (direnv hook fish)
@@ -34,4 +33,5 @@ remove_duplicate_path
 
 # $PATH の優先順位制御のため
 set -x PATH /usr/local/bin $PATH
+set -x PATH $HOME/.rbenv/shims $PATH
 set -x PATH $HOME/.nodenv/shims $PATH
