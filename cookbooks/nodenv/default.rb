@@ -1,5 +1,5 @@
 nodenv = {
-  version: '13.1.0',
+  version: '15.4.0',
   path: "~/.nodenv"
 }
 
