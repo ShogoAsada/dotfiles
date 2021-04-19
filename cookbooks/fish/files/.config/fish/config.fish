@@ -3,6 +3,7 @@ set -x XDG_CONFIG_HOME $HOME/.config
 set -x GHQ_ROOT $HOME/ghq/src
 eval (direnv hook fish)
 set -x FZF_DEFAULT_OPTS '--height 40% --reverse --border'
+set -x JAVA_HOME /Library/Java/JavaVirtualMachines/adoptopenjdk-12.jdk/Contents/Home/
 set -U FZF_LEGACY_KEYBINDINGS 0
 
 alias v 'nvim'
