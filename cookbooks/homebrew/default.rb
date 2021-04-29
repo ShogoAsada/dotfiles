@@ -8,6 +8,7 @@ end
 
 tap 'heroku/brew'
 tap 'homebrew/cask-drivers'
+tap 'AdoptOpenJDK/openjdk'
 
 brew 'awscli'
 brew 'amazon-ecs-cli'
@@ -26,10 +27,12 @@ brew 'gnu-tar'
 brew 'heroku'
 brew 'hub'
 brew 'jq'
+brew 'maven'
 brew 'nasm'
 brew 'neovim'
 brew 'nkf'
 brew 'nodenv'
+brew 'openapi-generator'
 brew 'postgresql'
 brew 'python@3.9'
 brew 'python@2'
@@ -41,6 +44,7 @@ brew 'tree'
 brew 'yarn'
 
 # cask 'alfred' powerpackが3.xまでなので、4.x以上対応を購入するまでコメントアウト
+cask 'adoptopenjdk12'
 cask 'docker'
 cask 'evernote'
 cask 'google-chrome'
