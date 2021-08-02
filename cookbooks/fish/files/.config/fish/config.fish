@@ -20,6 +20,7 @@ alias fig 'docker-compose'
 alias fbr 'git branch -a | fzf | xargs git checkout'
 alias gh 'cd (ghq root)/(ghq list | fzf)'
 alias tar 'gtar'
+alias be 'bundle exec'
 
 if test -n 'which colordiff'
   alias diff 'colordiff -u'
