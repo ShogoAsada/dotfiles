@@ -18,7 +18,6 @@ if dein#load_state('~/.cache/dein')
   let s:lazy_toml = '~/.config/nvim/.dein_lazy.toml'
   call dein#load_toml(s:toml, {'lazy': 0})
   call dein#load_toml(s:lazy_toml, {'lazy': 1})
-
   call dein#end()
   call dein#save_state()
 
@@ -77,3 +76,11 @@ nmap k <Plug>(accelerated_jk_gk)
 set completeopt+=noinsert
 let g:python_host_prog = expand('/usr/local/bin/python2')
 let g:python3_host_prog = expand('/usr/local/bin/python3')
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+let g:rspec_command = '!bundle exec rspec {spec}'
+
