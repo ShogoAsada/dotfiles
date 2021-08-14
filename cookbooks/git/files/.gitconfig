@@ -10,4 +10,6 @@
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
-
+[alias]
+  wip = "commit --allow-empty -m '[ci skip] wip'"
+  redo = "reset --soft HEAD^"
