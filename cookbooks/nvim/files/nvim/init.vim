@@ -80,10 +80,10 @@ set completeopt+=noinsert
 let g:python_host_prog = expand('/usr/local/bin/python2')
 let g:python3_host_prog = expand('/usr/local/bin/python3')
 
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-let g:rspec_command = '!bundle exec rspec {spec}'
+" run-rspec.vim
+nnoremap <leader>r :RunSpec<CR>
+nnoremap <leader>l :RunSpecLine<CR>
+nnoremap <leader>e :RunSpecLastRun<CR>
+nnoremap <leader>cr :RunSpecCloseResult<CR>
+let g:run_rspec_bin = 'bundle exec rspec'
 

@@ -3,6 +3,6 @@ repo = 'hashivim/vim-terraform'
 on_ft = ['terraform']
 
 [[plugins]]
-repo = 'thoughtbot/vim-rspec'
+repo = 'itmammoth/run-rspec.vim'
 on_ft = ['ruby']
 
