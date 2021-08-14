@@ -28,6 +28,7 @@ endif
 
 filetype plugin indent on
 
+set sh=fish
 set clipboard=unnamed
 
 set fenc=utf-8
@@ -61,6 +62,8 @@ set incsearch
 set wrapscan
 set hlsearch
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+tnoremap <silent> <ESC> <C-\><C-n>
 
 " NERDTree
 " Ctrl-nでNERDTreeを開く
