@@ -5,10 +5,6 @@ repo = 'Shougo/dein.vim'
 repo = 'Shougo/vimproc.vim'
 
 [[plugins]]
-repo = 'Shougo/deoplete.nvim'
-hook_add = 'let g:deoplete#enable_at_startup = 1'
-
-[[plugins]]
 repo = 'Yggdroot/indentLine'
 
 [[plugins]]
@@ -18,14 +14,14 @@ repo = 'bronson/vim-trailing-whitespace'
 repo = 'rhysd/accelerated-jk'
 
 [[plugins]]
-repo = 'autozimu/LanguageClient-neovim'
-rev = 'next'
-build = 'bash install.sh'
-hook_add = 'source ~/.config/nvim/plugins/language-client.vim'
-
-[[plugins]]
 repo = 'tpope/vim-endwise'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+merged = '0'
+hook_add = 'source ~/.config/nvim/plugins/coc_settings.vim'
 

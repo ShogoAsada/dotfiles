@@ -75,11 +75,6 @@ let NERDTreeShowHidden = 1
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
 
-" deoplete & LSP Client
-set completeopt+=noinsert
-let g:python_host_prog = expand('/usr/local/bin/python2')
-let g:python3_host_prog = expand('/usr/local/bin/python3')
-
 " run-rspec.vim
 nnoremap <leader>r :RunSpec<CR>
 nnoremap <leader>l :RunSpecLine<CR>
