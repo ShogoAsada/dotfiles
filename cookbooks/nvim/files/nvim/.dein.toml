@@ -25,3 +25,6 @@ rev = 'release'
 merged = '0'
 hook_add = 'source ~/.config/nvim/plugins/coc_settings.vim'
 
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+
