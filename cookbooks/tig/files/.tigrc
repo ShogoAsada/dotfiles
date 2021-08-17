@@ -14,3 +14,6 @@ bind main    F ?git fetch %(remote)
 bind main    R !git rebase -i %(commit)
 bind diff    R !git rebase -i %(commit)
 
+bind generic ^ ?git reset --soft HEAD^
+bind generic _ ?git reset --hard HEAD@{"%(prompt Enter HEAD@{} number: )"}
+
