@@ -38,3 +38,6 @@ function! s:show_documentation()
   endif
 endfunction
 
+" coc-lists
+nnoremap <C-p> :CocList files<CR>
+
