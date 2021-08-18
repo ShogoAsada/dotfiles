@@ -37,6 +37,8 @@ set noswapfile
 set autoread
 set hidden
 set showcmd
+set completeopt=menuone,noinsert
+inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 
 set number
 set cursorline
