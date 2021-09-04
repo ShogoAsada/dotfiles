@@ -40,4 +40,5 @@ endfunction
 
 " coc-lists
 nnoremap <C-p> :CocList files<CR>
+nnoremap <C-w> :CocList words<CR>
 
