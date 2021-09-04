@@ -6,3 +6,7 @@ on_ft = ['terraform']
 repo = 'itmammoth/run-rspec.vim'
 on_ft = ['ruby']
 
+[[plugins]]
+repo = 'tpope/vim-rails'
+on_ft = ['ruby']
+
