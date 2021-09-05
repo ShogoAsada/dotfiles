@@ -12,6 +12,7 @@ tap 'AdoptOpenJDK/openjdk'
 
 brew 'awscli'
 brew 'amazon-ecs-cli'
+brew 'bat'
 brew 'circleci'
 brew 'colordiff'
 brew 'direnv'
