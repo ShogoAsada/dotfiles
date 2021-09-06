@@ -10,3 +10,7 @@ on_ft = ['ruby']
 repo = 'tpope/vim-rails'
 on_ft = ['ruby']
 
+[[plugins]]
+repo = 'dhruvasagar/vim-table-mode'
+on_ft = ['md']
+

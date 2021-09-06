@@ -88,3 +88,6 @@ let g:run_rspec_bin = 'bundle exec rspec'
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
+" vim-table-mode
+let g:table_mode_corner = '|'
+
