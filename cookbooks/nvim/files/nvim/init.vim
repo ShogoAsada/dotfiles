@@ -84,3 +84,7 @@ nnoremap <leader>e :RunSpecLastRun<CR>
 nnoremap <leader>cr :RunSpecCloseResult<CR>
 let g:run_rspec_bin = 'bundle exec rspec'
 
+" vim-easy-align
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+

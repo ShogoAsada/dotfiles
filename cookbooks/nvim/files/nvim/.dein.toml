@@ -28,3 +28,6 @@ hook_add = 'source ~/.config/nvim/plugins/coc_settings.vim'
 [[plugins]]
 repo = 'cohama/lexima.vim'
 
+[[plugins]]
+repo = 'junegunn/vim-easy-align'
+
