@@ -34,3 +34,6 @@ repo = 'junegunn/vim-easy-align'
 [[plugins]]
 repo = 'mechatroner/rainbow_csv'
 
+[[plugins]]
+repo = 'vim-test/vim-test'
+

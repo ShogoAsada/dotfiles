@@ -77,17 +77,17 @@ let NERDTreeShowHidden = 1
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
 
-" run-rspec.vim
-nnoremap <leader>r :RunSpec<CR>
-nnoremap <leader>l :RunSpecLine<CR>
-nnoremap <leader>e :RunSpecLastRun<CR>
-nnoremap <leader>cr :RunSpecCloseResult<CR>
-let g:run_rspec_bin = 'bundle exec rspec'
-
 " vim-easy-align
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " vim-table-mode
 let g:table_mode_corner = '|'
+
+" vim-test
+let g:test#strategy = 'neovim'
+
+nnoremap <leader>s :TestNearest<CR>
+nnoremap <Leader>f :TestFile<CR>
+nnoremap <Leader>g  :TestLast<CR>
 
