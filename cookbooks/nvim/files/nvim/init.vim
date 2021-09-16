@@ -91,3 +91,6 @@ nnoremap <leader>s :TestNearest<CR>
 nnoremap <Leader>f :TestFile<CR>
 nnoremap <Leader>g  :TestLast<CR>
 
+" fzf.vim
+nnoremap <silent>rg  :Rg<CR>
+
