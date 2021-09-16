@@ -87,9 +87,9 @@ let g:table_mode_corner = '|'
 " vim-test
 let g:test#strategy = 'neovim'
 
-nnoremap <leader>s :TestNearest<CR>
+nnoremap <leader>n :TestNearest<CR>
 nnoremap <Leader>f :TestFile<CR>
-nnoremap <Leader>g  :TestLast<CR>
+nnoremap <Leader>l  :TestLast<CR>
 
 " fzf.vim
 nnoremap <silent>rg  :Rg<CR>
