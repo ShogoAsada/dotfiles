@@ -67,6 +67,10 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 tnoremap <silent> <ESC> <C-\><C-n>
 
+" ctrl s でファイル保存
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <ESC>:w<CR>
+
 " NERDTree
 " Ctrl-nでNERDTreeを開く
 map <C-n> :NERDTreeToggle<CR>
