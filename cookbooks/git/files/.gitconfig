@@ -11,5 +11,5 @@
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
 [alias]
-  wip = "commit --allow-empty -m '[ci skip] wip'"
+  wip = "commit --allow-empty -m '[ci skip]'"
   redo = "reset --soft HEAD^"
