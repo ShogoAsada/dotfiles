@@ -44,3 +44,14 @@ hook_add = '''
 set rtp+=/usr/local/opt/fzf
 '''
 
+[[plugins]]
+repo = "airblade/vim-gitgutter"
+hook_add = '''
+set updatetime=100
+
+highlight SignColumn ctermbg=NONE
+highlight GitGutterAdd ctermfg=white ctermbg=blue
+highlight GitGutterChange ctermfg=white ctermbg=green
+highlight GitGutterDelete ctermfg=white ctermbg=red
+'''
+
