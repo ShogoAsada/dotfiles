@@ -55,3 +55,9 @@ highlight GitGutterChange ctermfg=white ctermbg=green
 highlight GitGutterDelete ctermfg=white ctermbg=red
 '''
 
+[[plugins]]
+repo = 'mattn/vim-sqlfmt'
+hook_add = '''
+let g:sqlfmt_program = "sqlformat --indent_columns -r -k lower -"
+'''
+

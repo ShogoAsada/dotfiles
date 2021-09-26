@@ -98,3 +98,6 @@ nnoremap <Leader>l  :TestLast<CR>
 " fzf.vim
 nnoremap <silent>rg  :Rg<CR>
 
+" vim-sqlfmt
+nnoremap <buffer><leader>q :SQLFmt<CR>
+
