@@ -9,6 +9,9 @@ end
 tap 'heroku/brew'
 tap 'homebrew/cask-drivers'
 tap 'AdoptOpenJDK/openjdk'
+tap 'hikoyu/shogi'
+
+# MEMO: 将棋AIは /usr/local/opt/ 以下に配置される
 
 brew 'awscli'
 brew 'amazon-ecs-cli'
@@ -16,6 +19,7 @@ brew 'bat'
 brew 'circleci'
 brew 'colordiff'
 brew 'direnv'
+brew 'elmo'
 brew 'fish'
 brew 'fzf'
 brew 'gcc'
@@ -47,6 +51,7 @@ brew 'ripgrep'
 brew 'sqlformat'
 brew 'tfenv'
 brew 'tig'
+brew 'uonuma-yaneuraou'
 brew 'tree'
 brew 'yarn'
 
