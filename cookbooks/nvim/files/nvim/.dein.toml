@@ -61,3 +61,6 @@ hook_add = '''
 let g:sqlfmt_program = "sqlformat --indent_columns -r -k lower -"
 '''
 
+[[plugins]]
+repo = 'tpope/vim-surround'
+
