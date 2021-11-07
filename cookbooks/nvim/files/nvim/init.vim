@@ -71,6 +71,13 @@ tnoremap <silent> <ESC> <C-\><C-n>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <ESC>:w<CR>
 
+" neovim を閉じても undo できる
+" 事前にディレクトリを作っておく
+if has('persistent_undo')
+  set undodir=~/.vim/undo
+  set undofile
+endif
+
 " NERDTree
 " Ctrl-nでNERDTreeを開く
 map <C-n> :NERDTreeToggle<CR>
