@@ -108,3 +108,6 @@ nnoremap <silent>rg  :Rg<CR>
 " vim-sqlfmt
 nnoremap <buffer><leader>q :SQLFmt<CR>
 
+" surround.vim
+let g:surround_{char2nr("=")} = "<%= \r %>"
+
