@@ -13,6 +13,7 @@ tap 'hikoyu/shogi'
 
 # MEMO: 将棋AIは /usr/local/opt/ 以下に配置される
 
+brew 'asdf'
 brew 'awscli'
 brew 'amazon-ecs-cli'
 brew 'bat'
