@@ -42,3 +42,4 @@ remove_duplicate_path
 set -x PATH /usr/local/bin $PATH
 set -x PATH $HOME/.rbenv/shims $PATH
 set -x PATH $HOME/.nodenv/shims $PATH
+set -x PATH $HOME/.asdf/shims/kubectl $PATH
