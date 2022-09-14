@@ -1,3 +1,7 @@
+if status is-interactive
+  eval (/opt/homebrew/bin/brew shellenv)
+end
+
 set -x EDITOR nvim
 set -x XDG_CONFIG_HOME $HOME/.config
 set -x GHQ_ROOT $HOME/ghq/src
