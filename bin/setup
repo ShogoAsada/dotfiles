@@ -2,7 +2,7 @@
 
 set -e
 
-mitamae_version="1.11.7"
+mitamae_version="1.14.0"
 mitamae_cache="mitamae-${mitamae_version}"
 
 if [ -f "bin/${mitamae_cache}" ]; then exit; fi
@@ -12,7 +12,7 @@ case "$(uname)" in
     mitamae_bin="mitamae-x86_64-linux"
     ;;
  "Darwin")
-    mitamae_bin="mitamae-x86_64-darwin"
+    mitamae_bin="mitamae-aarch64-darwin"
     ;;
   *)
     echo "unexpected uname: $(uname)"
