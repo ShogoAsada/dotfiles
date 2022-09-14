@@ -41,7 +41,7 @@ repo = 'vim-test/vim-test'
 repo = 'junegunn/fzf.vim'
 hook_add = '''
 " https://github.com/junegunn/fzf/blob/master/README-VIM.md#installation
-set rtp+=/usr/local/opt/fzf
+set rtp+=/opt/homebrew/bin/fzf
 '''
 
 [[plugins]]

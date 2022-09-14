@@ -1,4 +1,4 @@
-fish_path = '/usr/local/bin/fish'
+fish_path = '/opt/homebrew/bin/fish'
 
 directory "#{node[:xdg_config_home]}/fish" do
   user node[:user]

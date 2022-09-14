@@ -8,7 +8,7 @@ set -x FZF_DEFAULT_OPTS '--height 60% --reverse --border'
 set -x FZF_FIND_FILE_COMMAND 'rg --files --hidden --follow --glob "!.git/*"'
 set -x FZF_FIND_FILE_OPTS '--preview "bat  --color=always --style=header,grid --line-range :100 {}"'
 
-source /usr/local/opt/asdf/libexec/asdf.fish
+source /opt/homebrew/opt/asdf/asdf.fish
 
 alias v 'nvim'
 alias rm 'rm -i'
