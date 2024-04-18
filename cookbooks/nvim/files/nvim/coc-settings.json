@@ -1,4 +1,15 @@
 {
- " solargraph.commandPath": "/Users/asadashougo/.rbenv/shims/solargraph"
+  "suggest.enablePreselect": true,
+  "solargraph.commandPath": "/Users/asada/.rbenv/shims/solargraph",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "html",
+    "markdown",
+    "typescriptreact",
+    "typescript",
+    "javascriptreact",
+    "javascript",
+    "json",
+    "graphql"
+  ]
 }
-
