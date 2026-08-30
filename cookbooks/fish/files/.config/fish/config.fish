@@ -6,7 +6,10 @@ set -x EDITOR nvim
 set -x XDG_CONFIG_HOME $HOME/.config
 set -x GHQ_ROOT $HOME/ghq/src
 eval (direnv hook fish)
-set -x JAVA_HOME /Library/Java/JavaVirtualMachines/adoptopenjdk-12.jdk/Contents/Home/
+set -l java_home (/usr/libexec/java_home 2>/dev/null)
+if test -n "$java_home"
+  set -x JAVA_HOME $java_home
+end
 set -x FZF_DEFAULT_OPTS '--height 60% --reverse --border'
 set -x FZF_CTRL_T_COMMAND 'rg --files --hidden --follow --glob "!.git/*"'
 set -x FZF_CTRL_T_OPTS '--preview "bat --color=always --style=header,grid --line-range :100 {}"'
