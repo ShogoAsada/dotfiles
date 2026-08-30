@@ -1,0 +1,16 @@
+# keymap.toml
+
+[[mgr.prepend_keymap]]
+on   = ["F"]
+run  = 'shell "root=$(git rev-parse --show-toplevel 2>/dev/null || echo .); file=$(cd \"$root\" && fd --type f --hidden --exclude .git | fzf --layout=reverse); [ -n \"$file\" ] && ya emit reveal \"$root/$file\"" --block'
+desc = "fzf search"
+
+[[mgr.prepend_keymap]]
+on   = ["y", "p"]
+run  = 'shell "printf \"%s\" \"$0\" | pbcopy" --confirm'
+desc = "Copy absolute path to clipboard"
+
+[[mgr.prepend_keymap]]
+on   = ["g", "p"]
+run  = 'shell "$HOME/.config/yazi/scripts/grip-preview.sh \"$0\"" --orphan'
+desc = "Preview Markdown with grip"
