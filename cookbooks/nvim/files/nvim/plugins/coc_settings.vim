@@ -1,4 +1,4 @@
-let g:python3_host_prog = '/opt/homebrew/bin/python3'
+let g:loaded_python3_provider = 0
 let g:loaded_perl_provider = 0
 
 "Use <c-space> to trigger completion.
