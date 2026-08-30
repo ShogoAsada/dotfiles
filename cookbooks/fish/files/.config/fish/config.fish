@@ -51,3 +51,15 @@ set -x PATH $HOME/.asdf/shims/kubectl $PATH
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="$HOME/.local/bin:$PATH"
+
+# Ctrl+g で ghq リポジトリに移動
+function __ghq_cd
+  set -l query (commandline -b)
+  set -l repo (ghq list --full-path | fzf --query "$query")
+  commandline -r ""
+  if test -n "$repo"
+    cd $repo
+  end
+  commandline -f repaint
+end
+bind \cg __ghq_cd
