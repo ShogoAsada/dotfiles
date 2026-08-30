@@ -18,13 +18,17 @@ link File.expand_path("#{node[:xdg_config_home]}/fish/config.fish") do
   force true
 end
 
-execute 'curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish' do
+execute "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish --create-dirs -o #{node[:xdg_config_home]}/fish/functions/fisher.fish" do
   not_if "test -f #{node[:xdg_config_home]}/fish/functions/fisher.fish"
 end
 
-link File.expand_path("#{node[:xdg_config_home]}/fish/fishfile") do
-  to File.expand_path('../files/.config/fish/fishfile', __FILE__)
+link File.expand_path("#{node[:xdg_config_home]}/fish/fish_plugins") do
+  to File.expand_path('../files/.config/fish/fish_plugins', __FILE__)
   user node[:user]
   force true
+end
+
+execute 'fish -c "fisher update"' do
+  user node[:user]
 end
 
