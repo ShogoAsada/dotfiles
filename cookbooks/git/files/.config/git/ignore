@@ -6,3 +6,5 @@
 .vscode/
 .vagrant/
 
+
+**/.claude/settings.local.json
