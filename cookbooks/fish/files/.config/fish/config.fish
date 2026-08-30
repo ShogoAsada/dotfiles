@@ -11,6 +11,7 @@ set -U FZF_LEGACY_KEYBINDINGS 0
 set -x FZF_DEFAULT_OPTS '--height 60% --reverse --border'
 set -x FZF_FIND_FILE_COMMAND 'rg --files --hidden --follow --glob "!.git/*"'
 set -x FZF_FIND_FILE_OPTS '--preview "bat  --color=always --style=header,grid --line-range :100 {}"'
+set -x OBJC_DISABLE_INITIALIZE_FORK_SAFETY YES
 
 alias v 'nvim'
 alias rm 'rm -i'
@@ -28,6 +29,7 @@ alias gc 'git branch -a | fzf | xargs git checkout'
 alias tar 'gtar'
 alias be 'bundle exec'
 alias bes 'bundle exec spring'
+alias tfp 'terraform plan'
 
 if test -n 'which colordiff'
   alias diff 'colordiff -u'
@@ -45,3 +47,6 @@ set -x PATH /usr/local/bin $PATH
 set -x PATH $HOME/.rbenv/shims $PATH
 set -x PATH $HOME/.nodenv/shims $PATH
 set -x PATH $HOME/.asdf/shims/kubectl $PATH
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="$HOME/.local/bin:$PATH"
