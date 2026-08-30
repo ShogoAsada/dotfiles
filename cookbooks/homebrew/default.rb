@@ -7,6 +7,7 @@ execute '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebr
 end
 
 tap 'heroku/brew'
+tap 'manaflow-ai/cmux'
 #tap 'homebrew/cask-drivers'
 
 brew 'asdf'
@@ -51,6 +52,8 @@ brew 'tree'
 brew 'yarn'
 
 # cask 'alfred' powerpackが3.xまでなので、4.x以上対応を購入するまでコメントアウト
+cask 'cmux'
+cask 'codex'
 cask 'temurin'
 cask 'docker'
 cask 'google-chrome'
