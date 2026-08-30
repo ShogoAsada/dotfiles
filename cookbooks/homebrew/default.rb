@@ -52,6 +52,7 @@ brew 'tig'
 brew 'tree'
 brew 'yarn'
 brew 'yazi'
+brew 'zoxide'
 
 # cask 'alfred' powerpackが3.xまでなので、4.x以上対応を購入するまでコメントアウト
 cask 'cmux'

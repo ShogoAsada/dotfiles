@@ -54,6 +54,8 @@ export PATH="$HOME/.local/bin:$PATH"
 source /opt/homebrew/opt/fzf/shell/key-bindings.fish
 fzf_key_bindings
 
+zoxide init fish | source
+
 # Ctrl+g で ghq リポジトリに移動
 function __ghq_cd
   set -l query (commandline -b)
