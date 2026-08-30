@@ -12,7 +12,7 @@ define :brew do
 end
 
 define :cask do
-  execute "brew install --cask #{params[:name]}" do
+  execute "brew install --cask --adopt #{params[:name]}" do
     not_if "test -d /opt/homebrew/Caskroom/#{params[:name]} -o -x /opt/homebrew/bin/#{params[:name]}"
   end
 end
