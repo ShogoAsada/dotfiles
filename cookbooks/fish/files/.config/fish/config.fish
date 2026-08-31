@@ -38,21 +38,14 @@ if command -q colordiff
   alias diff 'colordiff -u'
 end
 
-# sourceなどで環境変数が重複してしまうのでその対策
-function remove_duplicate_path
-  set -x PATH (echo $PATH | tr ' ' '\n' | sort -u)
-end
-
-remove_duplicate_path
-
 # $PATH の優先順位制御のため
-set -x PATH /usr/local/bin $PATH
-set -x PATH $HOME/.rbenv/shims $PATH
-set -x PATH $HOME/.nodenv/shims $PATH
-set -x PATH $HOME/.asdf/shims/kubectl $PATH
+# fish_add_path は既にある要素を重ねて足さないので、読み込みを繰り返しても増えない
+fish_add_path -gPm /usr/local/bin
+fish_add_path -gPm $HOME/.rbenv/shims
+fish_add_path -gPm $HOME/.nodenv/shims
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
-export PATH="$HOME/.local/bin:$PATH"
+eval (/opt/homebrew/bin/brew shellenv)
+fish_add_path -gPm $HOME/.local/bin
 
 source /opt/homebrew/opt/fzf/shell/key-bindings.fish
 fzf_key_bindings
