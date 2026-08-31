@@ -34,7 +34,7 @@ alias be 'bundle exec'
 alias bes 'bundle exec spring'
 alias tfp 'terraform plan'
 
-if test -n 'which colordiff'
+if command -q colordiff
   alias diff 'colordiff -u'
 end
 
