@@ -41,10 +41,13 @@ end
 # $PATH の優先順位制御のため
 # fish_add_path は既にある要素を重ねて足さないので、読み込みを繰り返しても増えない
 fish_add_path -gPm /usr/local/bin
-fish_add_path -gPm $HOME/.rbenv/shims
-fish_add_path -gPm $HOME/.nodenv/shims
 
 eval (/opt/homebrew/bin/brew shellenv)
+
+# rbenv と nodenv の shim は Homebrew より前に置く
+# 後ろに置くと Homebrew 側の node が shim を覆い、nodenv の指定が効かなくなる
+fish_add_path -gPm $HOME/.rbenv/shims
+fish_add_path -gPm $HOME/.nodenv/shims
 fish_add_path -gPm $HOME/.local/bin
 
 source /opt/homebrew/opt/fzf/shell/key-bindings.fish
